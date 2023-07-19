@@ -316,21 +316,26 @@ left: -10%;
     grid-template-columns: repeat(5,1fr);
     justify-content: center;
     align-content: center;
-    padding: 50px;
-}
-
-.games-name-container p:hover{
-border: 1px solid palevioletred;
-background: white;
-padding: 0px;
-border-radius: 48px;
-color: palevioletred;
-min-width: 10px;
-
+   
+    gap: 20px;
 }
 
 
 
+.action,.advanture,.arcade,.educational,.word,.role
+,.music,.puzzle,.strategy{
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.hover:hover{
+    border: 1px solid palevioletred;
+    background: white;
+    border-radius: 48px;
+    color: palevioletred;
+}
 /* support  part*/
 
 .support-container{
@@ -426,18 +431,27 @@ min-width: 10px;
    
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    padding-bottom: 20px;
-}
-.games-name-container p:hover{
-    padding: 5px;
-}
-.footer-container{
+    
     padding-bottom: 20px;
 }
 
+.footer-container{
+    padding-bottom: 20px;
+    
+}
+.small-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+}
+.app-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .games-name-container{
     grid-template-columns: repeat(3,1fr);
+    margin: 30px 0;
 
 }
 .sub-img img{
@@ -505,5 +519,9 @@ min-width: 10px;
     text-align: center;
     
 }
+.games-name-container{
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px 0;
 
+}
 }
